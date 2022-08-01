@@ -1,0 +1,86 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage[backend=biber,style=alphabetic,sorting=none]{biblatex}
+\addbibresource{references.bib}
+
+\newcommand{\ParagraphSpacing}{0.8em}
+\newcommand{\ParagraphIndentation}{0pt}
+\newcommand{\LineSpacing}{1}
+
+\setlength\parindent{\ParagraphIndentation}
+\setlength\parskip{\ParagraphSpacing}
+\renewcommand\baselinestretch{\LineSpacing}
+
+% definition for left-aligned table column
+\newcolumntype{L}[1]{>{\raggedright\renewcommand{\newline}{\\}\arraybackslash\hspace{0pt}}m{#1}}
+
+\pagenumbering{gobble}
+
+\begin{document}
+
+    \subsection*{Paper collection}
+
+    A collection of papers that have come together as part of the research done for the thesis.
+    The listing has no particular order.
+    Each title has a reference in the bibliography.
+    The citation style has been chosen to not interfere with the IEEE style bibliography used in the thesis.
+    \\
+
+    \begin{longtable}{L{0.6cm}L{7.5cm}L{0.9cm}L{4cm}}
+        \toprule \midrule \textbf{Nr} & \textbf{Title} & \textbf{Year} & \textbf{Tags} \\ \midrule \endfirsthead
+        \toprule \textbf{Nr} & \textbf{Title} & \textbf{Year} & \textbf{Tags} \\ \midrule \endhead
+        001 & A Survey of DevOps Concepts and Challenges\cite{coll:001} & 2019 & paper, survey, devops, ci, cd \\ \midrule
+        002 & Adopting DevOps in the real world: A theory, a model, and a case study\cite{coll:002} & 2019 & paper, devops, case \\ \midrule
+        003 & DevOps in practice: A multiple case study of five companies\cite{coll:003} & 2019 & paper, devops, case \\ \midrule
+        004 & Failure-Aware Application Placement Modeling and Optimization in High Turnover DevOps Environment\cite{coll:004} & 2019 & paper, devops, cloud, orchestration, apps, testing \\ \midrule
+        005 & Fallacies and Pitfalls on the Road to DevOps: A Longitudinal Industrial Study\cite{coll:005} & 2020 & paper, devops, case, ci, cd \\ \midrule
+        006 & Dealing with Security in a Real DevOps Environment\cite{coll:006} & 2019 & paper, devsecops \\ \midrule
+        007 & Reinventing ITIL in the Age of DevOps\cite{coll:007} & 2018 & book, devops, itil \\ \midrule
+        008 & Cloud Native Patterns\cite{coll:008} & 2019 & book, cloud-native \\ \midrule
+        009 & The DevOps Handbook\cite{coll:009} & 2016 & book, devops, agile \\ \midrule
+        010 & Continuous Delivery\cite{coll:010} & 2010 & book, ci, cd \\ \midrule
+        011 & Cloud Native DevOps with Kubernetes\cite{coll:011} & 2019 & book, devops, kubernetes \\ \midrule
+        012 & DevOps Improvements for Reduced Cycle Times with Integrated Test Optimizations for Continuous Integration\cite{coll:012} & 2018 & paper, devops, ci, testing \\ \midrule
+        013 & Performance Evaluation of Microservices Architectures Using Containers\cite{coll:013} & 2015 & paper, containers, perf \\ \midrule
+        014 & Building Reactive Microservices in Java\cite{coll:014} & 2017 & book, microservices, java \\ \midrule
+        015 & Continuous Delivery with Spinnaker\cite{coll:015} & 2018 & book, cd \\ \midrule
+        016 & Introducing Istio Service Mesh for Microservices\cite{coll:016} & 2019 & book, microservices, mesh \\ \midrule
+        017 & Microservices for Java Developers\cite{coll:017} & 2019 & book, microservices, java \\ \midrule
+        018 & Migrating to Microservice Databases\cite{coll:018} & 2017 & book, microservices, db \\ \midrule
+        019 & Modern Java EE Design Patterns\cite{coll:019} & 2015 & book, java \\ \midrule
+        020 & Speed Thrills: How to Harness the Power of CI/CD for Your Development Team\cite{coll:020} & 2017 & paper, ci, cd \\ \midrule
+        021 & The Enterprise Path to Service Mesh Architectures\cite{coll:021} & 2018 & book, mesh \\ \midrule
+        022 & A Policy Based Application Deployment Method in Hybrid Cloud Environment\cite{coll:022} & 2018 & hybrid-cloud, policy \\ \midrule
+        023 & Policies Based Container Migration Using Cross-Cloud Management Platform\cite{coll:023} & 2018 & multi-cloud, policy, docker \\ \midrule
+        024 & Software-Defined Cloud Centers\cite{coll:024} & 2018 & book, cloud \\ \midrule
+        025 & Orchestrating the Deployment of High Availability Services on Multi-zone and Multi-cloud Scenarios\cite{coll:025} & 2018 & multi-cloud, ha, deploy \\ \midrule
+        026 & Hybrid Cloud resource provisioning policy in the presence of resource failures\cite{coll:026} & 2012 & hybrid-cloud, policy, provisioning, failures \\ \midrule
+        027 & Policy-Driven Middleware for Heterogeneous, Hybrid Cloud Platforms\cite{coll:027} & 2013 & hybrid-cloud, policy, middleware, PaaS \\ \midrule
+        028 & Extensible Declarative Management of Cloud Resources across Providers\cite{coll:028} & 2019 & multi-cloud, cmp, tags \\ \midrule
+        029 & Systematic and Recomputable Comparison of Multi-cloud Management Platforms\cite{coll:029} & 2018 & multi-cloud, cmp \\ \midrule
+        030 & Transactional Migration of InhomogeneousComposite Cloud Applications\cite{coll:030} & 2018 & cloud, migration \\ \midrule
+        031 & Emerging Hybrid Cloud Patterns\cite{coll:031} & 2016 & hybrid-cloud, surveys, patterns, enterprise \\ \midrule
+        032 & A Federated Multi-Cloud PaaS Infrastructure\cite{coll:032} & 2012 & multi-cloud, PaaS \\ \midrule
+        033 & A Status of Serverless Computing and Function-as-a-Service(FaaS) in Industry and Research\cite{coll:033} & 2017 & FaaS, overview \\ \midrule
+        034 & State of DevOps 2019\cite{coll:034} & 2019 & DevOps, survey, overview \\ \midrule
+        \bottomrule
+    \end{longtable}
+
+    The following sections outline the bibliography of papers grouped by type.
+
+    \printbibliography[heading=subbibliography,title={Books},type=book]
+    \printbibliography[heading=subbibliography,title={Articles},type=article]
+    \printbibliography[heading=subbibliography,title={Inbooks},type=inbook]
+    \printbibliography[heading=subbibliography,title={Inproceedings},type=inproceedings]
+    \printbibliography[heading=subbibliography,title={Reports},type=report]
+
+\end{document}
+
+

@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If referencing this work, please cite it as below."
+authors:
+- family-names: "Anliker"
+  given-names: "Simon"
+title: "HybridCloudOps Thesis Paper Collection"
+version: 1.1.0
+date-released: 2020-07-19
+url: "https://github.com/hybridcloudops/papers"
